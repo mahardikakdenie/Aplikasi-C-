@@ -101,7 +101,7 @@ int main(int argc, char const *argv[])
             Game:
             cout<<"Game Array "<<endl;
             cout<<"1.Sorting Array"<<endl;
-            cout<<"Pilih [ 1 / 2 ]";cin>>Pilih;
+            cout<<"Pilih [ 1 ]";cin>>Pilih;
             if(Pilih == 1){
                 SortingArray Op1;
                 Op1.Inputan();
