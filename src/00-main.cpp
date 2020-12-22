@@ -11,6 +11,8 @@
 #include "BangunDatar/02-Persegi.hpp"
 #include "BangunDatar/03-PersegiPanjang.hpp"
 #include "BangunDatar/04-Segitiga.hpp"
+#include "BangunDatar/05-Trapesium.hpp"
+#include "BangunDatar/06-BelahKetupat.hpp"
 #include "SortingArray/01-SortingArray.hpp"
 
 using namespace std;
@@ -75,6 +77,8 @@ int main(int argc, char const *argv[])
                 cout<<"1.Persegi"<<endl;
                 cout<<"2.Persegi Panjang"<<endl;
                 cout<<"3.Segitiga"<<endl;
+                cout<<"4.Trapesium"<<endl;
+                cout<<"5.BelahKetupat"<<endl;
                 cout<<"Pilih [ 1 / 2 / 3 ] : ";cin>>Pilih;
                 if(Pilih == 1){
                     Persegi Op1;
@@ -88,7 +92,16 @@ int main(int argc, char const *argv[])
                     Segitiga Op3;
                     Op3.Inputan();
                     Op3.Display();
-                }else{
+                }else if(Pilih == 4){
+                    Trapesium Op4;
+                    Op4.Inputan();
+                    Op4.Display();
+                }else if(Pilih == 5){
+                    BelahKetupat Op5;
+                    Op5.Inputan();
+                    Op5.Display();
+                }
+                else{
                     goto BangunDatar;
                 }
                 
