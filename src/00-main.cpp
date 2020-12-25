@@ -5,6 +5,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 { 
+    system("cls");
     int Pilih ;
     char lagi ;
     do
@@ -116,7 +117,7 @@ int main(int argc, char const *argv[])
             goto hmm;
             break;
         }
-    cout<<"\nUlangi Lagi [ Y / N ]";cin>>lagi;
+    cout<<"\nKembalii ? [ Y / N ]";cin>>lagi;
     } while (lagi == 'Y' || lagi == 'y');
 }
 
