@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "Server.CPP"
+#include "Serverr.CPP"
 using namespace std;
 
 int main(int argc, char const *argv[])
@@ -98,6 +98,7 @@ int main(int argc, char const *argv[])
 
         case 2:
             Game:
+            system("cls");
             cout<<"Game Array "<<endl;
             cout<<"1.Sorting Array"<<endl;
             cout<<"Pilih [ 1 ] : ";cin>>Pilih;
@@ -106,6 +107,8 @@ int main(int argc, char const *argv[])
                 Op1.Inputan();
                 Op1.Display();
                 Op1.eksekusi();
+            }else{
+                goto Game;
             }
         break;
 
@@ -113,7 +116,6 @@ int main(int argc, char const *argv[])
             goto hmm;
             break;
         }
-
     cout<<"\nUlangi Lagi [ Y / N ]";cin>>lagi;
     } while (lagi == 'Y' || lagi == 'y');
 }
