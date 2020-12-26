@@ -10,7 +10,7 @@ using namespace std;
 class PersegiPanjang : public BangunDatar {
     public:
         void Inputan(){
-            cout<<"\n== Persegi Panjang == ";
+            cout<<"\n== Persegi Panjang == "<<endl;
             cout<<"Masukan Nilai Panjang : ";cin>>valueA;
             cout<<"Masukan Nilai Lebar : ";cin>>valueB;
         }
