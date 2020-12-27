@@ -18,7 +18,7 @@ int main(int argc, char const *argv[])
         cout << "2.Game Array" << endl;
         cout << "3.Konversi Suhu" << endl;
         cout << "Pilih [ 1 / 2 ] : ";
-        cin >> Pilih;
+        cin >> Pilih ;
         switch (Pilih){
 
         //Bangun Ruang 
@@ -72,8 +72,7 @@ int main(int argc, char const *argv[])
             }
 
             // Bangun Datar
-            else if (Pilih == 2)
-            {
+            else if (Pilih == 2){
             BangunDatar:
                 system("cls");
                 cout << "\nKalkulator Luas" << endl;
@@ -111,8 +110,7 @@ int main(int argc, char const *argv[])
                 else{
                     goto BangunDatar;
                 }
-            }
-            else{
+            }else{
                 goto Math;
             }
             break;
@@ -186,26 +184,22 @@ int main(int argc, char const *argv[])
                 cout << "3.Fahrenheit " << endl;
                 cout << "Pilih [ 1 / 2 / 3 ] : ";
                 cin >> Pilih;
-                if (Pilih == 1)
-                {
+                if (Pilih == 1){
                     Reamur toCelcius;
                     toCelcius.inputan();
                     toCelcius.DisplaytoCelcius();
                 }
-                else if (Pilih == 2)
-                {
+                else if (Pilih == 2){
                     Reamur toKelvin;
                     toKelvin.inputan();
                     toKelvin.DisplaytoKelvin();
                 }
-                else if (Pilih == 3)
-                {
+                else if (Pilih == 3){
                     Reamur toFahrenheit;
                     toFahrenheit.inputan();
                     toFahrenheit.DisplaytoFahrenheit();
                 }
-                else
-                {
+                else{
                     goto Reamur;
                 }
             }
@@ -218,26 +212,22 @@ int main(int argc, char const *argv[])
                 cout << "3.Fahrenheit " << endl;
                 cout << "Pilih : [ 1 / 2 / 3 ] : ";
                 cin >> Pilih;
-                if (Pilih == 1)
-                {
+                if (Pilih == 1){
                     Kelvin toCelcius;
                     toCelcius.inputan();
                     toCelcius.DisplaytoCelcius();
                 }
-                else if (Pilih == 2)
-                {
+                else if (Pilih == 2){
                     Kelvin toReamur;
                     toReamur.inputan();
                     toReamur.DisplaytoReamur();
                 }
-                else if (Pilih == 3)
-                {
+                else if (Pilih == 3){
                     Kelvin toFahrenheit;
                     toFahrenheit.inputan();
                     toFahrenheit.DisplaytoFahreheit();
                 }
-                else
-                {
+                else{
                     goto Kelvin;
                 }
             }
@@ -274,14 +264,12 @@ int main(int argc, char const *argv[])
         
 
         break;
-
     default:
         goto hmm;
-        break;
+    break;
     }
+    
     cout << "\nKembalii ? [ Y / N ]";
     cin >> lagi;
-}
-while (lagi == 'Y' || lagi == 'y')
-    ;
+    }while (lagi == 'Y' || lagi == 'y');
 }
