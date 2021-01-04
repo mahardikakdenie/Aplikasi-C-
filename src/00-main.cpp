@@ -31,7 +31,8 @@ int main(int argc, char const *argv[])
             cout << "== Math ==" << endl;
             cout << "1.BangunRuang " << endl;
             cout << "2.BangunDatar " << endl;
-            cout << "Pilih [1 / 2 ] : ";
+            cout << "3.Kembali" << endl;
+            cout << "Pilih [1 / 2 / 3 ] : ";
             cin >> Pilih;
             if (Pilih == 1)
             {
@@ -43,7 +44,8 @@ int main(int argc, char const *argv[])
                 cout << "3.Bola" << endl;
                 cout << "4.Limas Segitiga" << endl;
                 cout << "5.Tabung" << endl;
-                cout << "Pilih [ 1 / 2 / 3 / 4 / 5] : ";
+                cout << "6.Kembali " << endl;
+                cout << "Pilih [ 1 / 2 / 3 / 4 / 5 / 6 ] : ";
                 cin >> Pilih;
                 if (Pilih == 1)
                 {
@@ -75,6 +77,10 @@ int main(int argc, char const *argv[])
                     Op5.Inputan();
                     Op5.Display();
                 }
+                else if (Pilih == 6)
+                {
+                    goto Math;
+                }
                 else
                 {
                     goto BangunRuang;
@@ -92,7 +98,8 @@ int main(int argc, char const *argv[])
                 cout << "3.Segitiga" << endl;
                 cout << "4.Trapesium" << endl;
                 cout << "5.BelahKetupat" << endl;
-                cout << "Pilih [ 1 / 2 / 3 ] : ";
+                cout << "6.Kembali" << endl;
+                cout << "Pilih [ 1 / 2 / 3 / 4 / 5 / 6 ] : ";
                 cin >> Pilih;
                 if (Pilih == 1)
                 {
@@ -124,10 +131,18 @@ int main(int argc, char const *argv[])
                     Op5.Inputan();
                     Op5.Display();
                 }
+                else if (Pilih == 6)
+                {
+                    goto Math;
+                }
                 else
                 {
                     goto BangunDatar;
                 }
+            }
+            else if (Pilih == 3)
+            {
+                goto hmm;
             }
             else
             {
@@ -141,7 +156,8 @@ int main(int argc, char const *argv[])
             system("cls");
             cout << "Game Array " << endl;
             cout << "1.Sorting Array" << endl;
-            cout << "Pilih [ 1 ] : ";
+            cout << "2.Kembali " << endl;
+            cout << "Pilih [ 1 / 2 ] : ";
             cin >> Pilih;
             if (Pilih == 1)
             {
@@ -149,6 +165,10 @@ int main(int argc, char const *argv[])
                 Op1.Inputan();
                 Op1.Display();
                 Op1.eksekusi();
+            }
+            else if (Pilih == 2)
+            {
+                goto hmm;
             }
             else
             {
@@ -165,7 +185,8 @@ int main(int argc, char const *argv[])
             cout << "2.Reamur " << endl;
             cout << "3.Kelvin " << endl;
             cout << "4.Fahrenheit " << endl;
-            cout << "Pilih [ 1 / 2 / 3 / 4 ] : ";
+            cout << "5.Kembali " << endl;
+            cout << "Pilih [ 1 / 2 / 3 / 4 / 5 ] : ";
             cin >> Pilih;
             if (Pilih == 1)
             {
@@ -175,7 +196,8 @@ int main(int argc, char const *argv[])
                 cout << "1.Reamur " << endl;
                 cout << "2.Kelvin " << endl;
                 cout << "3.Fahrenheit " << endl;
-                cout << "Pilih [ 1 / 2 / 3 ] : ";
+                cout << "4.Kembali " << endl;
+                cout << "Pilih [ 1 / 2 / 3 / 4 ] : ";
                 cin >> Pilih;
                 if (Pilih == 1)
                 {
@@ -195,6 +217,10 @@ int main(int argc, char const *argv[])
                     toFahrenheit.Inputan();
                     toFahrenheit.DisplaytoFahrenheit();
                 }
+                else if (Pilih == 4)
+                {
+                    goto KonversiSuhu;
+                }
                 else
                 {
                     goto Celcius;
@@ -208,7 +234,8 @@ int main(int argc, char const *argv[])
                 cout << "1.Celcius " << endl;
                 cout << "2.Kelvin " << endl;
                 cout << "3.Fahrenheit " << endl;
-                cout << "Pilih [ 1 / 2 / 3 ] : ";
+                cout << "4.Kembali " << endl;
+                cout << "Pilih [ 1 / 2 / 3 / 4 ] : ";
                 cin >> Pilih;
                 if (Pilih == 1)
                 {
@@ -228,6 +255,10 @@ int main(int argc, char const *argv[])
                     toFahrenheit.inputan();
                     toFahrenheit.DisplaytoFahrenheit();
                 }
+                else if (Pilih == 4)
+                {
+                    goto KonversiSuhu;
+                }
                 else
                 {
                     goto Reamur;
@@ -241,7 +272,8 @@ int main(int argc, char const *argv[])
                 cout << "1.Celcius " << endl;
                 cout << "2.Reamur " << endl;
                 cout << "3.Fahrenheit " << endl;
-                cout << "Pilih : [ 1 / 2 / 3 ] : ";
+                cout << "4.Kembali " << endl;
+                cout << "Pilih : [ 1 / 2 / 3 / 4 ] : ";
                 cin >> Pilih;
                 if (Pilih == 1)
                 {
@@ -261,6 +293,10 @@ int main(int argc, char const *argv[])
                     toFahrenheit.inputan();
                     toFahrenheit.DisplaytoFahreheit();
                 }
+                else if (Pilih == 4)
+                {
+                    goto KonversiSuhu;
+                }
                 else
                 {
                     goto Kelvin;
@@ -274,7 +310,8 @@ int main(int argc, char const *argv[])
                 cout << "1.Celcius " << endl;
                 cout << "2.Reamur " << endl;
                 cout << "3.Kelvin " << endl;
-                cout << "Pilih [ 1 / 2 / 3 ] : ";
+                cout << "4.Kembali " << endl;
+                cout << "Pilih [ 1 / 2 / 3 / 4 ] : ";
                 cin >> Pilih;
                 if (Pilih == 1)
                 {
@@ -294,10 +331,18 @@ int main(int argc, char const *argv[])
                     toKelvin.inputan();
                     toKelvin.DisplaytoKelvin();
                 }
+                else if (Pilih == 4)
+                {
+                    goto KonversiSuhu;
+                }
                 else
                 {
                     goto Fahrenheit;
                 }
+            }
+            else if (Pilih == 5)
+            {
+                goto hmm;
             }
             else
             {
