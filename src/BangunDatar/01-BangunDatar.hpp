@@ -7,7 +7,7 @@ using namespace std;
 
 class BangunDatar {
     protected:
-        int valueA,valueB;
+        int valueA,valueB,valueC;
         float Hasil;
 };
 #endif

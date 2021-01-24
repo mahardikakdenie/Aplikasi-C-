@@ -38,52 +38,119 @@ int main(int argc, char const *argv[])
             {
             BangunRuang:
                 system("cls");
-                cout << "\nKalkulator Volume " << endl;
-                cout << "1.Kubus" << endl;
-                cout << "2.Balok" << endl;
-                cout << "3.Bola" << endl;
-                cout << "4.Limas Segitiga" << endl;
-                cout << "5.Tabung" << endl;
-                cout << "6.Kembali " << endl;
-                cout << "Pilih [ 1 / 2 / 3 / 4 / 5 / 6 ] : ";
+                cout << "Bangun Ruang " << endl;
+                cout << "1.Luas Permukaan " << endl;
+                cout << "2.Volume " << endl;
+                cout << "3.Kembali " << endl;
+                cout << "Pilih [ 1 / 2 / 3 ]";
                 cin >> Pilih;
                 if (Pilih == 1)
                 {
-                    Kubus Op1;
-                    Op1.Inputan();
-                    Op1.Display();
+                LuasPermukaan:
+                    system("cls");
+                    cout << "\nLuas Permukaan " << endl;
+                    cout << "1.Kubus " << endl;
+                    cout << "2.Balok " << endl;
+                    cout << "3.Bola " << endl;
+                    cout << "4.Limas Segitiga " << endl;
+                    cout << "5.Tabung " << endl;
+                    cout << "6.Kembali" << endl;
+                    cout << "Pilih : ";
+                    cin >> Pilih;
+                    if (Pilih == 1)
+                    {
+                        Kubus Op1;
+                        Op1.Inputan();
+                        Op1.DisplayK();
+                    }
+                    else if (Pilih == 2)
+                    {
+                        Balok Op2;
+                        Op2.Inputan();
+                        Op2.DisplayL();
+                    }
+                    else if (Pilih == 3)
+                    {
+                        Bola Op3;
+                        Op3.InputanK();
+                        Op3.DisplayK();
+                    }
+                    else if (Pilih == 4)
+                    {
+                        LimasSegitiga Op4;
+                        Op4.Inputan();
+                        Op4.DisplayL();
+                    }
+                    else if (Pilih == 5)
+                    {
+                        Tabung Op5;
+                        Op5.Inputan();
+                        Op5.Inputan();
+                    }
+                    else if (Pilih == 6)
+                    {
+                        goto Math;
+                    }
+                    else
+                    {
+                        goto LuasPermukaan;
+                    }
                 }
                 else if (Pilih == 2)
                 {
-                    Balok Op2;
-                    Op2.Inputan();
-                    Op2.Display();
-                }
-                else if (Pilih == 3)
-                {
-                    Bola Op3;
-                    Op3.Inputan();
-                    Op3.Display();
-                }
-                else if (Pilih == 4)
-                {
-                    LimasSegitiga Op4;
-                    Op4.Inputan();
-                    Op4.Display();
-                }
-                else if (Pilih == 5)
-                {
-                    Tabung Op5;
-                    Op5.Inputan();
-                    Op5.Display();
-                }
-                else if (Pilih == 6)
-                {
-                    goto Math;
+                Volume:
+                    system("cls");
+                    cout << "\nVolume " << endl;
+                    cout << "1.Kubus" << endl;
+                    cout << "2.Balok" << endl;
+                    cout << "3.Bola" << endl;
+                    cout << "4.Limas Segitiga" << endl;
+                    cout << "5.Tabung" << endl;
+                    cout << "6.Kembali " << endl;
+                    cout << "Pilih [ 1 / 2 / 3 / 4 / 5 / 6 ] : ";
+                    cin >> Pilih;
+                    if (Pilih == 1)
+                    {
+                        Kubus Op1;
+                        Op1.Inputan();
+                        Op1.Display();
+                    }
+                    else if (Pilih == 2)
+                    {
+                        Balok Op2;
+                        Op2.Inputan();
+                        Op2.Display();
+                    }
+                    else if (Pilih == 3)
+                    {
+                        Bola Op3;
+                        Op3.Inputan();
+                        Op3.Display();
+                    }
+                    else if (Pilih == 4)
+                    {
+                        LimasSegitiga Op4;
+                        Op4.Inputan();
+                        Op4.Display();
+                    }
+                    else if (Pilih == 5)
+                    {
+                        Tabung Op5;
+                        Op5.Inputan();
+                        Op5.Display();
+                    }
+                    else if (Pilih == 6)
+                    {
+                        goto Math;
+                    }
+                    else
+                    {
+                        goto Volume;
+                    }
                 }
                 else
                 {
-                    goto BangunRuang;
+                    goto Math;
                 }
             }
 
@@ -92,52 +159,116 @@ int main(int argc, char const *argv[])
             {
             BangunDatar:
                 system("cls");
-                cout << "\nKalkulator Luas" << endl;
-                cout << "1.Persegi" << endl;
-                cout << "2.Persegi Panjang" << endl;
-                cout << "3.Segitiga" << endl;
-                cout << "4.Trapesium" << endl;
-                cout << "5.BelahKetupat" << endl;
-                cout << "6.Kembali" << endl;
-                cout << "Pilih [ 1 / 2 / 3 / 4 / 5 / 6 ] : ";
+                cout << "Bangun Datar " << endl;
+                cout << "1.Keliling " << endl;
+                cout << "2.Luas " << endl;
+                cout << "3.Kembali " << endl;
+                cout << "Pilih [ 1 / 2 / 3 ] : ";
                 cin >> Pilih;
                 if (Pilih == 1)
                 {
-                    Persegi Op1;
-                    Op1.Inputan();
-                    Op1.Display();
+                Keliling:
+                    system("cls");
+                    cout << "\nKeliling Bangun Datar" << endl;
+                    cout << "1.Persegi " << endl;
+                    cout << "2.Persegi Panjang " << endl;
+                    cout << "3.Segitiga " << endl;
+                    cout << "4.Trapesium " << endl;
+                    cout << "5.BelahKetupat " << endl;
+                    cout << "6.Kembali " << endl;
+                    cout << "Pilih [ 1 / 2 / 3 / 4 / 5 / 6 ] : ";
+                    cin >> Pilih;
+                    if (Pilih == 1)
+                    {
+                        Persegi Op1;
+                        Op1.Inputan();
+                        Op1.DisplayK();
+                    }
+                    else if (Pilih == 2)
+                    {
+                        PersegiPanjang Op2;
+                        Op2.Inputan();
+                        Op2.DisplayK();
+                    }
+                    else if (Pilih == 3)
+                    {
+                        Segitiga Op3;
+                        Op3.InputanK();
+                        Op3.DisplayK();
+                    }
+                    else if (Pilih == 4)
+                    {
+                        Trapesium Op4;
+                        Op4.InputanK();
+                        Op4.DisplayK();
+                    }
+                    else if (Pilih == 5)
+                    {
+                        BelahKetupat Op5;
+                        Op5.InputanK();
+                        Op5.DisplayK();
+                    }
+                    else if (Pilih == 6)
+                    {
+                        goto BangunDatar;
+                    }
+                    else
+                    {
+                        goto Keliling;
+                    }
+                    
                 }
                 else if (Pilih == 2)
                 {
-                    PersegiPanjang Op2;
-                    Op2.Inputan();
-                    Op2.Display();
-                }
-                else if (Pilih == 3)
-                {
-                    Segitiga Op3;
-                    Op3.Inputan();
-                    Op3.Display();
-                }
-                else if (Pilih == 4)
-                {
-                    Trapesium Op4;
-                    Op4.Inputan();
-                    Op4.Display();
-                }
-                else if (Pilih == 5)
-                {
-                    BelahKetupat Op5;
-                    Op5.Inputan();
-                    Op5.Display();
-                }
-                else if (Pilih == 6)
-                {
-                    goto Math;
-                }
-                else
-                {
-                    goto BangunDatar;
+                Luas:
+                    system("cls");
+                    cout << "\nLuas Bangun Datar" << endl;
+                    cout << "1.Persegi" << endl;
+                    cout << "2.Persegi Panjang" << endl;
+                    cout << "3.Segitiga" << endl;
+                    cout << "4.Trapesium" << endl;
+                    cout << "5.BelahKetupat" << endl;
+                    cout << "6.Kembali" << endl;
+                    cout << "Pilih [ 1 / 2 / 3 / 4 / 5 / 6 ] : ";
+                    cin >> Pilih;
+                    if (Pilih == 1)
+                    {
+                        Persegi Op1;
+                        Op1.Inputan();
+                        Op1.Display();
+                    }
+                    else if (Pilih == 2)
+                    {
+                        PersegiPanjang Op2;
+                        Op2.Inputan();
+                        Op2.Display();
+                    }
+                    else if (Pilih == 3)
+                    {
+                        Segitiga Op3;
+                        Op3.Inputan();
+                        Op3.Display();
+                    }
+                    else if (Pilih == 4)
+                    {
+                        Trapesium Op4;
+                        Op4.Inputan();
+                        Op4.Display();
+                    }
+                    else if (Pilih == 5)
+                    {
+                        BelahKetupat Op5;
+                        Op5.Inputan();
+                        Op5.Display();
+                    }
+                    else if (Pilih == 6)
+                    {
+                        goto BangunDatar;
+                    }
+                    else
+                    {
+                        goto Luas;
+                    }
                 }
             }
             else if (Pilih == 3)

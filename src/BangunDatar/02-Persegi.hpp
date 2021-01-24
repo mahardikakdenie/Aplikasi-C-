@@ -20,5 +20,12 @@ class Persegi : public BangunDatar{
             cout<<valueA<<" * "<<valueA<<" * "<<" = "<<Hasil<<endl;
             cout<<"Luas Persegi : "<<Hasil<<endl;
         }
+        void DisplayK () {
+            cout << "\nKeliling Persegi : " << endl;
+            Hasil = valueA * 4 ;
+            cout << "Rumus Keliling Persegi : " << "4 * sisi " << endl;
+            cout << "Rumus Keliling Persegi : " << valueA << " * 4" << " = " << Hasil << endl ;
+            cout << "Keliling Persegi : " << Hasil << endl ;
+        }
 };
 #endif
