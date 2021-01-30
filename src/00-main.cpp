@@ -216,8 +216,7 @@ int main(int argc, char const *argv[])
                     {
                         goto Keliling;
                     }
-                    
-                }
+                                }
                 else if (Pilih == 2)
                 {
                 Luas:
